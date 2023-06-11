@@ -48,7 +48,7 @@ class AuthenticationViewModel:ObservableObject{
             Database.database().reference()
                 .child("user")
                 .childByAutoId()
-                .setValue(name + user.uid){ (error,ref) in
+                .setValue(data){ (error,ref) in
                     self.successAuth.send()          //회원정보 저장 후 프로필 사진 변경 화면으로 넘어가기 위함
                     print("DEBUG : 유저정보가 업로드 되었습니다. 프로필 사진 변경")
                 }
@@ -77,11 +77,11 @@ class AuthenticationViewModel:ObservableObject{
                 }
                 
             }
-            guard let user = result?.user else{ return }    //유저정보가 비어있다면 반환
-            self.userSession = user
-            self.fetchUser()
-            self.recent.removeAll()
-            self.fetchRecentChat()
+//            guard let user = result?.user else{ return }    //유저정보가 비어있다면 반환
+//            self.userSession = user
+//            self.fetchUser()
+//            self.recent.removeAll()
+//            self.fetchRecentChat()
             print("로그인 성공")
         }
     }
