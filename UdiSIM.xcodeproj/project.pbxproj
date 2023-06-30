@@ -17,6 +17,7 @@
 		812D2172292CB6F700D2F745 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D2171292CB6F700D2F745 /* MapViewModel.swift */; };
 		8145CD3329471AFF007F4EC7 /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145CD3229471AFF007F4EC7 /* Recent.swift */; };
 		8157343E2930B10E00BB0023 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8157343D2930B10E00BB0023 /* ChatViewModel.swift */; };
+		8182F8692A39DC06000FBF33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8182F8682A39DC06000FBF33 /* GoogleService-Info.plist */; };
 		81A1DC5429288C58002ED3DF /* UdiSIMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1DC5329288C58002ED3DF /* UdiSIMApp.swift */; };
 		81A1DC5829288C59002ED3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A1DC5729288C59002ED3DF /* Assets.xcassets */; };
 		81A1DC5B29288C59002ED3DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A1DC5A29288C59002ED3DF /* Preview Assets.xcassets */; };
@@ -33,7 +34,6 @@
 		81A1DCAF2928905A002ED3DF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1DCAE2928905A002ED3DF /* AuthenticationViewModel.swift */; };
 		81A1DCB229289062002ED3DF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1DCB029289062002ED3DF /* RegisterView.swift */; };
 		81A1DCB329289062002ED3DF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1DCB129289062002ED3DF /* LoginView.swift */; };
-		81BEAFEE2928F85D007312F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BEAFED2928F85D007312F4 /* GoogleService-Info.plist */; };
 		81BEAFF229290CDF007312F4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEAFF129290CDF007312F4 /* UserData.swift */; };
 		81BEAFF429290EDF007312F4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEAFF329290EDF007312F4 /* UserService.swift */; };
 		81C68D7E2A32EAD800435487 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 81C68D7D2A32EAD800435487 /* Kingfisher */; };
@@ -81,6 +81,7 @@
 		812D2171292CB6F700D2F745 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		8145CD3229471AFF007F4EC7 /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
 		8157343D2930B10E00BB0023 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		8182F8682A39DC06000FBF33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		81A1DC5029288C58002ED3DF /* UdiSIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdiSIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A1DC5329288C58002ED3DF /* UdiSIMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdiSIMApp.swift; sourceTree = "<group>"; };
 		81A1DC5729288C59002ED3DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		81A1DCAE2928905A002ED3DF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		81A1DCB029289062002ED3DF /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		81A1DCB129289062002ED3DF /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		81BEAFED2928F85D007312F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81BEAFF129290CDF007312F4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		81BEAFF329290EDF007312F4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		81CE5DBA2928A8490022A6A1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				81A1DC5329288C58002ED3DF /* UdiSIMApp.swift */,
-				81BEAFED2928F85D007312F4 /* GoogleService-Info.plist */,
+				8182F8682A39DC06000FBF33 /* GoogleService-Info.plist */,
 				81A1DCA029288FFA002ED3DF /* Extension */,
 				81A1DC9D29288FB4002ED3DF /* Service */,
 				81BEAFEF29290BDC007312F4 /* Core */,
@@ -494,7 +494,7 @@
 			files = (
 				81A1DC5B29288C59002ED3DF /* Preview Assets.xcassets in Resources */,
 				81A1DC5829288C59002ED3DF /* Assets.xcassets in Resources */,
-				81BEAFEE2928F85D007312F4 /* GoogleService-Info.plist in Resources */,
+				8182F8692A39DC06000FBF33 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

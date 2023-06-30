@@ -7,14 +7,15 @@
 
 import SwiftUI
 import Firebase
-
+import FirebaseCore
+import FirebaseFirestore
 
 @main
 struct UdiSIMApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var vm = AuthenticationViewModel()
-    init(){
-        FirebaseApp.configure()
-    }
+
     var body: some Scene {
         WindowGroup {
             NavigationView{
@@ -23,5 +24,12 @@ struct UdiSIMApp: App {
             .environmentObject(vm)
             .environmentObject(ChatViewModel(user: vm.userdata))
         }
+    }
+}
+
+class AppDelegate:NSObject,UIApplicationDelegate{
+    func application(_ application:UIApplication,didFinishLaunchingWithOptions launchOptions:[UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        return true
     }
 }

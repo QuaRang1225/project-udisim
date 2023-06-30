@@ -17,9 +17,6 @@ struct StartView: View {
                 VStack(spacing:0){
                     ZStack{
                         Circle()
-                            .fill(LinearGradient(gradient: Gradient(colors: [Color.pink,Color.cyan]), startPoint: .bottomTrailing, endPoint: .topLeading))
-                            .frame(width: 250,height: 250)
-                        Circle()
                             .stroke(Color.white,lineWidth: 10)
                             .frame(width: 250,height: 250)
                         Image("Udi")
